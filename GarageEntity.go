@@ -1,7 +1,6 @@
 package main
 
-type ParkingEntity struct {
-	total,
-
-
+type GarageEntity struct {
+	Name string
+	current, openSpots, total, percent int
 }
