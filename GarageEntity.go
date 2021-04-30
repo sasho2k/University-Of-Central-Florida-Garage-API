@@ -1,6 +1,9 @@
 package main
 
 type GarageEntity struct {
-	Name string
-	current, openSpots, total, percent int
+	Name string `json:"name"`
+	Current int `json:"current"`
+	OpenSpots int `json:"open_spots"`
+	Total int `json:"total"`
+	Percent int `json:"percent"`
 }
