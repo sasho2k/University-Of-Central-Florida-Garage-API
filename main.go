@@ -23,7 +23,7 @@ func ParseGarageRequest(GarageIdentity string) GarageEntity{
 	*/
 	regex := regexp.MustCompile("Garage ([A-Za-z]*)")
 	regex2 := regexp.MustCompile("\\d*\\/\\d*")
-	regex3 := regexp.MustCompile("percent: ([0-9]+)")
+	regex3 := regexp.MustCompile("percent: (-*[0-9]+)")
 
 	garageName := regex.FindString(GarageIdentity)
 	// Garage Numbers is an array of [spaces used / spaces available]
@@ -34,6 +34,10 @@ func ParseGarageRequest(GarageIdentity string) GarageEntity{
 	currentSpots, _ := strconv.Atoi(garageNumbers[0])
 	totalSpots, _ := strconv.Atoi(garageNumbers[1])
 	percent, _ := strconv.Atoi(garagePercent[1])
+
+	if percent <= -1 {
+		percent = 0
+	}
 
 	garage := GarageEntity {
 		garageName,
@@ -47,7 +51,7 @@ func ParseGarageRequest(GarageIdentity string) GarageEntity{
 }
 
 func (g *GarageEntity) print() {
-	fmt.Println(g.Name, ":", g.current, "/", g.total, "\t\\\\\t", g.openSpots, "open spots, garage is", g.percent, "% full")
+	fmt.Println(g.Name, ":", g.current, "/", g.total, "\t\\\\\t", g.openSpots, "open spots, garage is", g.percent, "% open")
 }
 
 func GarageRequest(){
