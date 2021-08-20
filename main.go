@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/sasho2k/University-Of-Central-Florida-Garage-API/server"
+	"University-Of-Central-Florida-Garage-API/client"
 )
 
 /////////////////////////////////////////////
@@ -10,5 +10,5 @@ import (
 
 func main() {
 	/* INFO: Start Service will start router for API, the heart of our system. */
-	server.StartService()
+	client.StartService()
 }
