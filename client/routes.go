@@ -21,7 +21,7 @@ func StartService() {
 
 		year, month, day := time.Now().Date()
 		hour, min, sec := time.Now().Clock()
-		date := internal.ParseDate(year, month, day, hour, min, sec)
+		date := internals.ParseDate(year, month, day, hour, min, sec)
 
 		str := "UCF GARAGE INFORMATION AS OF " + date + "\n"
 
