@@ -1,7 +1,7 @@
 package main
 
 import (
-	"University-Of-Central-Florida-Garage-API/client"
+	"github.com/sasho2k/University-Of-Central-Florida-Garage-API/client"
 )
 
 /////////////////////////////////////////////

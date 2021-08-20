@@ -1,9 +1,9 @@
 package client
 
 import (
-	"University-Of-Central-Florida-Garage-API/internal"
-	"University-Of-Central-Florida-Garage-API/job"
 	"github.com/gofiber/fiber/v2"
+	"github.com/sasho2k/University-Of-Central-Florida-Garage-API/internal"
+	"github.com/sasho2k/University-Of-Central-Florida-Garage-API/job"
 	"net/http"
 	"time"
 )

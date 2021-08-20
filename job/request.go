@@ -1,8 +1,8 @@
 package job
 
 import (
-	"University-Of-Central-Florida-Garage-API/internal"
 	"github.com/PuerkitoBio/goquery"
+	"github.com/sasho2k/University-Of-Central-Florida-Garage-API/internal"
 	"net/http"
 )
 
