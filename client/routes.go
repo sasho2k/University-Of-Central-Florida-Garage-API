@@ -1,7 +1,7 @@
 package client
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber"
 	"github.com/sasho2k/University-Of-Central-Florida-Garage-API/internals"
 	"github.com/sasho2k/University-Of-Central-Florida-Garage-API/job"
 	"net/http"
