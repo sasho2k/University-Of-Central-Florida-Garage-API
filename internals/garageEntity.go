@@ -1,4 +1,4 @@
-package internal
+package internals
 
 type GarageEntity struct {
 	Name      string `json:"name"`
