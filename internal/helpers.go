@@ -55,8 +55,8 @@ func (g *GarageEntity) Debug() {
 	fmt.Println(g.Name, ":", g.Current, "/", g.Total, " \\\\\t", g.OpenSpots, "open spots, garage is", g.Percent, "% open")
 }
 
-// Print :: Debug to print values.
+// Print :: Print values .
 func (g *GarageEntity) Print() string {
 	return g.Name + ": " + strconv.Itoa(g.Current) + "/" + strconv.Itoa(g.Total) + "\n        " + strconv.Itoa(g.OpenSpots) +
-		" open spots, garage is " + strconv.Itoa(g.Percent) + "% open"
+		" open spots, garage is " + strconv.Itoa(g.Percent) + "% open\n\n"
 }
